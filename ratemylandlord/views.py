@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def indexPageView(request) :
-    return HttpResponse('This is the RateMyLandlord homepage')
+    return render(request, 'ratemylandlord/index.html')
 
 def viewReviewsPageView(request) :
     return HttpResponse('RateMyLandLord: Welcome to the view reviews page')
